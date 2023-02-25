@@ -41,7 +41,137 @@
   </header>
   <main class="main">
     <div class="container">
+      <section class="parameters">
+        <a class="create-btn btn" href="task.html">
+          Сreate new task
+        </a>
+        <div class="additional">
+          <div class="format">
+            <span class="format__item format__item_list">
+              <img class="format__img" src="/assets/cards.svg" alt="list display" title="">
+            </span>
+            <span class="format__item format__item_col">
+              <img class="format__img" src="/assets/list.svg" alt="column display" title="">
+            </span>
+          </div>
+          <div class="filter">
+            <div class="filter__btn btn">
+              Filter
+            </div>
+            <div class="filter__block">
+              <div class="filter__wrap filter__wrap_title">
+                <h3 class="filter__title">
+                  Choose filter
+                </h3>
+                <div class="filter__close">
+                  <div class="filter__line"></div>
+                  <div class="filter__line filter__line_2"></div>
+                </div>
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Task name
+                </p>
+                <input class="filter__search input" name="search" type="text" placeholder="Search">
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Assignee
+                </p>
+                <ul class="filter__list">
+                  <li class="filter__list-item">
+                    Person 1
+                  </li>
+                  <li class="filter__list-item">
+                    Person 2
+                  </li>
+                  <li class="filter__list-item">
+                    Person 3
+                  </li>
+                  <li class="filter__list-item">
+                    Person 4
+                  </li>
+                  <li class="filter__list-item">
+                    Person 5
+                  </li>
+                  <li class="filter__list-item">
+                    Person 6
+                  </li>
+                  <li class="filter__list-item">
+                    Person 7
+                  </li>
+                  <li class="filter__list-item">
+                    Person 8
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Date range
+                </p>
+                <div class="filter__range">
+                  <input class="filter__date input" name="start-date" type="date" placeholder="Start date">
+                  <span class="filter__span"></span>
+                  <input class="filter__date input" name="end-date" type="date" placeholder="End date">
+                </div>
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Priority
+                </p>
+                <div class="filter__choise">
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="high" type="checkbox">
+                    <label class="filter__label priority-label priority-label_high" for="high">high</label>
+                  </div>
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="medium" type="checkbox">
+                    <label class="filter__label priority-label priority-label_medium" for="high">medium</label>
+                  </div>
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="high" type="checkbox">
+                    <label class="filter__label priority-label priority-label_low" for="low">low</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Privacy
+                </p>
+                <div class="filter__choise">
+                  <div class="filter__choise-item">
+                    <input class="filter__radio" id="private" type="radio">
+                    <img src="/assets/lock.svg" alt="lock">
+                    <label class="filter__label privacy-label" for="high">Private</label>
+                  </div>
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="medium" type="radio">
+                    <label class="filter__label privacy-label" for="high">Public</label>
+                  </div>
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="high" type="radio">
+                    <label class="filter__label privacy-label" for="low">All</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__reset btn">
+                Reset
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="board">
+        <div class="todo">
 
+        </div>
+        <div class="progress">
+
+        </div>
+        <div class="complete">
+
+        </div>
+      </section>
     </div>
   </main>
   <footer class="footer">
