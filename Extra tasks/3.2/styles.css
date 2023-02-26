@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.main {
+  padding: 30px;
+  background: #eff1f4;
+}
+
+.flight__item {
+  margin-bottom: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 207px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.flight__item:hover {
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.flight__info {
+  padding: 20px 10px;
+}
+
+.flight__label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  padding: 3px 12px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  border-radius: 100px;
+}
+
+.flight__label_cheap {
+  background: #35c768;
+}
+
+.flight__label_fast {
+  background: #b983f1;
+}
+
+.flight__price {
+  margin: 10px 0 12px;
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+}
+
+.flight__thousandths {
+  margin-right: 2px;
+}
+
+.flight__ticket {
+  padding: 12px 0;
+  width: 100%;
+  font-size: 600px;
+  font-size: 18px;
+  color: #ffffff;
+  background: #ff6f32;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.flight__ticket:hover {
+  filter: brightness(95%);
+}
+
+.flight__details {
+  position: relative;
+  padding: 20px 20px;
+}
+
+.flight__details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #eff1f4;
+}
+
+.flight__how {
+  display: flex;
+  justify-content: space-between;
+}
+
+.airlines {
+  display: flex;
+}
+
+.airlines__item {
+  position: relative;
+  margin-right: 15px;
+}
+
+.airlines__item:hover::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  padding: 12px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  background: #0c131d;
+  border-radius: 5px;
+  animation: up 0.3s ease;
+}
+
+.airlines__item:hover::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  
+
+  border: 5px solid transparent; 
+  border-top: 5px solid #0c131d;
+  animation: up-triangle 0.3s ease;
+}
+
+@keyframes up {
+  from {
+    top: 0;
+    opacity: 0.2;
+  }
+  to {
+    top: -25px;
+    opacity: 1;
+  }
+}
+
+@keyframes up-triangle {
+  from {
+    top: 24px;
+    opacity: 0.2;
+  }
+  to {
+    top: -1px;
+    opacity: 1;
+  }
+}
+
+.airlines_cheap .airlines__item:hover:nth-child(1):before {
+  content: "Belavia";
+}
+
+.airlines_cheap .airlines__item:hover:nth-child(2):before {
+  content: "Turkish Airlines";
+}
+
+.airlines__img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.tags {
+  display: flex;
+}
+
+.tags__main {
+  margin-right: 20px;
+  display: flex;
+}
+
+.tags__item {
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.tags__item svg path {
+  fill: #f54759;
+}
+
+.tags__other {
+  display: flex;
+}
+
+.tags__icon {
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.tags__icon:hover .tags__fill-path {
+  
+  fill: #0c73fe;
+}
+
+.tags__icon:hover .tags__path {
+  stroke: #0c73fe;
+}

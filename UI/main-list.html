@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <a class="logo" href="main.html">
+          <h1 class="logo__title">
+            Kattavia
+          </h1>
+        </a>
+        <ul class="list">
+          <li class="list__item list__item_user d-none">
+            <a class="list__link" href="user.html">
+              Diana Pitalenko
+            </a>
+          </li>
+          <li class="list__item d-none">
+            <a class="list__link" href="#">
+              Log out
+            </a>
+          </li>
+          <li class="list__item list__item_login">
+            <a class="list__link" href="#">
+              Log in
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="parameters">
+        <a class="create-btn btn" href="#">
+          Сreate new task
+        </a>
+        <div class="additional">
+          <div class="format">
+            <div class="format__item format__item_list d-none">
+              <a href="main-list.html">
+                <img class="format__img" src="/assets/cards.svg" alt="list display" title="">
+              </a>
+            </div>
+            <div class="format__item format__item_col">
+              <a href="main.html">
+                <img class="format__img" src="/assets/list.svg" alt="column display" title="">
+              </a>
+            </div>
+          </div>
+          <div class="filter">
+            <button class="filter__btn btn">
+              Filter
+            </button>
+            <div class="filter__block">
+              <div class="filter__wrap filter__wrap_title">
+                <h4 class="filter__title title-h4">
+                  Choose filter
+                </h4>
+                <div class="filter__close">
+                  <div class="filter__line"></div>
+                  <div class="filter__line filter__line_2"></div>
+                </div>
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Task name
+                </p>
+                <input class="filter__search input" name="search" type="text" placeholder="Search">
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Assignee
+                </p>
+                <ul class="filter__list">
+                  <li class="filter__list-item">
+                    Person 1
+                  </li>
+                  <li class="filter__list-item">
+                    Person 2
+                  </li>
+                  <li class="filter__list-item">
+                    Person 3
+                  </li>
+                  <li class="filter__list-item">
+                    Person 4
+                  </li>
+                  <li class="filter__list-item">
+                    Person 5
+                  </li>
+                  <li class="filter__list-item">
+                    Person 6
+                  </li>
+                  <li class="filter__list-item">
+                    Person 7
+                  </li>
+                  <li class="filter__list-item">
+                    Person 8
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Date range
+                </p>
+                <div class="filter__range">
+                  <input class="filter__date input" name="start-date" type="date" placeholder="Start date">
+                  <span class="filter__span"></span>
+                  <input class="filter__date input" name="end-date" type="date" placeholder="End date">
+                </div>
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Priority
+                </p>
+                <div class="filter__choise">
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="high" type="checkbox">
+                    <label class="filter__label label label_priority label_high" for="high">high</label>
+                  </div>
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="medium" type="checkbox">
+                    <label class="filter__label label label_priority label_medium" for="high">medium</label>
+                  </div>
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="high" type="checkbox">
+                    <label class="filter__label label label_priority label_low" for="low">low</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__wrap">
+                <p class="filter__text">
+                  Privacy
+                </p>
+                <div class="filter__choise">
+                  <div class="filter__choise-item">
+                    <input class="filter__radio" id="private" type="radio">
+                    <img src="/assets/lock.svg" alt="lock">
+                    <label class="filter__label privacy-label" for="high">Private</label>
+                  </div>
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="medium" type="radio">
+                    <label class="filter__label privacy-label" for="high">Public</label>
+                  </div>
+                  <div class="filter__choise-item">
+                    <input class="filter__checkbox" id="high" type="radio">
+                    <label class="filter__label privacy-label" for="low">All</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__reset btn">
+                Reset
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="table">
+        <div class="row row_todo">
+          <div class="row__headline row__headline_active">
+            <h3 class="row__title title-h3">
+              <span class="row__arrow">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="row__path" d="M13.9582 30.625C13.5762 30.243 13.3853 29.7569 13.3853 29.1666C13.3853 28.5764 13.5762 28.0903 13.9582 27.7083L23.5415 18.125C23.7498 17.9166 23.9755 17.7694 24.2186 17.6833C24.4616 17.5972 24.7221 17.5535 24.9998 17.5521C25.2776 17.5521 25.5471 17.6041 25.8082 17.7083C26.0693 17.8125 26.2859 17.9514 26.4582 18.125L36.0415 27.7083C36.4234 28.0903 36.6144 28.5764 36.6144 29.1666C36.6144 29.7569 36.4234 30.243 36.0415 30.625C35.6596 31.0069 35.1734 31.1979 34.5832 31.1979C33.9929 31.1979 33.5068 31.0069 33.1248 30.625L24.9998 22.5L16.8748 30.625C16.4929 31.0069 16.0068 31.1979 15.4165 31.1979C14.8262 31.1979 14.3401 31.0069 13.9582 30.625Z" fill="black"/>
+                </svg>
+              </span>
+              <span class="row__title-text">
+                To Do
+              </span>
+            </h3>
+          </div>
+          <div class="row__wrap">
+            <div class="row__cover">
+              <table class="tasks">
+                <thead>
+                  <tr class="tasks__headline">
+                    <th>Name</th>
+                    <th>Assignee</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Comments</th>
+                    <th>Status</th>
+                    <th>Priority</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tasks__item">
+                    <td class="tasks__name">Task name</td>
+                    <td class="tasks__assignee">for Assignee person name</td>
+                    <td class="tasks__date">27.02.23 21:45</td>
+                    <td class="tasks__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ...</td>
+                    <td class="tasks__comment">Comments (2)</td>
+                    <td class="tasks__status"><span class="label label_status label_todo">to do</span></td>
+                    <td class="tasks__priority"><span class="label label_priority label_medium">medium</span></td>
+                  </tr>
+                  <tr class="tasks__item">
+                    <td class="tasks__name">Task name</td>
+                    <td class="tasks__assignee">for Assignee person name</td>
+                    <td class="tasks__date">27.02.23 21:45</td>
+                    <td class="tasks__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ...</td>
+                    <td class="tasks__comment">Comments (2)</td>
+                    <td class="tasks__status"><span class="label label_status label_todo">to do</span></td>
+                    <td class="tasks__priority"><span class="label label_priority label_medium">medium</span></td>
+                  </tr>
+                  <tr class="tasks__item">
+                    <td class="tasks__name">Task name</td>
+                    <td class="tasks__assignee">for Assignee person name</td>
+                    <td class="tasks__date">27.02.23 21:45</td>
+                    <td class="tasks__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ...</td>
+                    <td class="tasks__comment">Comments (2)</td>
+                    <td class="tasks__status"><span class="label label_status label_todo">to do</span></td>
+                    <td class="tasks__priority"><span class="label label_priority label_medium">medium</span></td>
+                  </tr>
+                  <tr class="tasks__item">
+                    <td class="tasks__name">Task name</td>
+                    <td class="tasks__assignee">for Assignee person name</td>
+                    <td class="tasks__date">27.02.23 21:45</td>
+                    <td class="tasks__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ...</td>
+                    <td class="tasks__comment">Comments (2)</td>
+                    <td class="tasks__status"><span class="label label_status label_todo">to do</span></td>
+                    <td class="tasks__priority"><span class="label label_priority label_medium">medium</span></td>
+                  </tr>
+                  <tr class="tasks__item">
+                    <td class="tasks__name">Task name</td>
+                    <td class="tasks__assignee">for Assignee person name</td>
+                    <td class="tasks__date">27.02.23 21:45</td>
+                    <td class="tasks__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ...</td>
+                    <td class="tasks__comment">Comments (2)</td>
+                    <td class="tasks__status"><span class="label label_status label_todo">to do</span></td>
+                    <td class="tasks__priority"><span class="label label_priority label_medium">medium</span></td>
+                  </tr>
+                  <tr class="tasks__item">
+                    <td class="tasks__name">Task name</td>
+                    <td class="tasks__assignee">for Assignee person name</td>
+                    <td class="tasks__date">27.02.23 21:45</td>
+                    <td class="tasks__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ...</td>
+                    <td class="tasks__comment">Comments (2)</td>
+                    <td class="tasks__status"><span class="label label_status label_todo">to do</span></td>
+                    <td class="tasks__priority"><span class="label label_priority label_medium">medium</span></td>
+                  </tr>
+                  <tr class="tasks__item">
+                    <td class="tasks__name">Task name</td>
+                    <td class="tasks__assignee">for Assignee person name</td>
+                    <td class="tasks__date">27.02.23 21:45</td>
+                    <td class="tasks__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ...</td>
+                    <td class="tasks__comment">Comments (2)</td>
+                    <td class="tasks__status"><span class="label label_status label_todo">to do</span></td>
+                    <td class="tasks__priority"><span class="label label_priority label_medium">medium</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="row__btn btn">
+              load more
+            </button>
+          </div>
+        </div>
+        <div class="row row_progress">
+          <div class="row__headline">
+            <h3 class="row__title title-h3">
+              <span class="row__arrow">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="row__path" d="M24.9998 31.8229C24.7221 31.8229 24.4526 31.7708 24.1915 31.6666C23.9304 31.5625 23.7137 31.4236 23.5415 31.25L13.9582 21.6666C13.5762 21.2847 13.3853 20.7986 13.3853 20.2083C13.3853 19.618 13.5762 19.1319 13.9582 18.75C14.3401 18.368 14.8262 18.1771 15.4165 18.1771C16.0068 18.1771 16.4929 18.368 16.8748 18.75L24.9998 26.875L33.1248 18.75C33.5068 18.368 33.9929 18.1771 34.5832 18.1771C35.1734 18.1771 35.6596 18.368 36.0415 18.75C36.4234 19.1319 36.6144 19.618 36.6144 20.2083C36.6144 20.7986 36.4234 21.2847 36.0415 21.6666L26.4582 31.25C26.2498 31.4583 26.0241 31.6062 25.7811 31.6937C25.538 31.7812 25.2776 31.8243 24.9998 31.8229Z" fill="black"/>
+                </svg>
+              </span>
+              <span class="row__title-text">
+                Progress
+              </span>
+            </h3>
+          </div>
+        </div>
+        <div class="row row_complete">
+          <div class="row__headline">
+            <h3 class="row__title title-h3">
+              <span class="row__arrow">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="row__path" d="M24.9998 31.8229C24.7221 31.8229 24.4526 31.7708 24.1915 31.6666C23.9304 31.5625 23.7137 31.4236 23.5415 31.25L13.9582 21.6666C13.5762 21.2847 13.3853 20.7986 13.3853 20.2083C13.3853 19.618 13.5762 19.1319 13.9582 18.75C14.3401 18.368 14.8262 18.1771 15.4165 18.1771C16.0068 18.1771 16.4929 18.368 16.8748 18.75L24.9998 26.875L33.1248 18.75C33.5068 18.368 33.9929 18.1771 34.5832 18.1771C35.1734 18.1771 35.6596 18.368 36.0415 18.75C36.4234 19.1319 36.6144 19.618 36.6144 20.2083C36.6144 20.7986 36.4234 21.2847 36.0415 21.6666L26.4582 31.25C26.2498 31.4583 26.0241 31.6062 25.7811 31.6937C25.538 31.7812 25.2776 31.8243 24.9998 31.8229Z" fill="black"/>
+                </svg>
+              </span>
+              <span class="row__title-text">
+                Complete
+              </span>
+            </h3>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="nav">
+        <ul class="list list_footer">
+          <li class="list__item">
+            <a class="logo" href="main.html">
+              <h1 class="logo__title">
+                Kattavia
+              </h1>
+            </a>
+          </li>
+          <li class="list__item">
+            <span class="list__text">
+              be in touch
+            </span>
+            <a class="list__link" href="mailto:dpitalenko27@gmail.com">
+              dpitalenko27@gmail.com
+            </a>
+          </li>
+          <li class="list__item">
+            <span class="list__text">
+              created by
+            </span>
+            <a class="list__link" href="https://github.com/dpitalenko">
+              Diana Pitalenko
+            </a>
+          </li>
+          <li class="list__item">
+            <span class="list__text">
+              current version
+            </span>
+            <span class="list__version">
+              1.1
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

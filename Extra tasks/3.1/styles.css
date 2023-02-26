@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  background: url("./pramod-tiwari-75P3etiPAME-unsplash.jpg") no-repeat center center / cover;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.7);
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  padding: 20px;
+  width: 500px;
+  background: #ffffff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+}
+
+.box__wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__wrap:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+}
+
+.box__title {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  color: #333333;
+}
+
+.box__exit {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.box__exit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 17px;
+  height: 2.5px;
+  background: #808080;
+  border-radius: 100px;
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.box__exit::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 17px;
+  height: 2.5px;
+  background: #808080;
+  border-radius: 100px;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+.box__exit:hover::before,
+.box__exit:hover::after {
+  background: #333;
+}
+
+.box__text {
+  margin: 35px 0 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #333333;
+}
+
+.box__action {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box__action::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+}
+
+.box__close {
+  margin-right: 8px;
+  background: #808080;
+  border: 1px solid #808080;
+}
+
+.box__close:hover {
+  color: #808080;
+  background: #ffffff;
+}
+
+.box__save {
+  background: #266be1;
+  border: 1px solid #266be1;
+}
+
+.box__save:hover {
+  color: #266be1;
+  background: #ffffff;
+}
+
+.btn {
+  padding: 10px 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
