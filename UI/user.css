@@ -1,0 +1,88 @@
+.person {
+  margin-bottom: 120px;
+  padding: 23px 44px 47px 41px;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.person__title {
+  margin-bottom: 30px;
+}
+
+.person__wrap {
+  position: relative;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.person__key {
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.person__edit {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.person__edit .person__path {
+  fill: var(--dark-blue);
+}
+
+.person__edit:hover .person__path {
+  fill: var(--dark-blue);
+}
+
+.person__img {
+  margin-right: 13px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.person__icon_woman:hover::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--black);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.person__icon_man:hover::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 128px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--black);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.person__img_man {
+  margin-right: 0;
+}
+
+.person__input {
+  height: 30px;
+}
+
+.person__buttons {
+  margin-top: 90px;
+}
+
+.person__save {
+  margin-right: 48px;
+  background: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+}
+
+.person__save:hover {
+  border: 1px solid var(--dark-blue);
+}

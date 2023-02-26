@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="user.css">
 </head>
 <body>
   <header class="header">
@@ -30,7 +31,7 @@
               Log out
             </a>
           </li>
-          <li class="list__item list__item_login">
+          <li class="list__item list__item_login d-none">
             <a class="list__link" href="#">
               Log in
             </a>
@@ -41,7 +42,83 @@
   </header>
   <main class="main">
     <div class="container">
-
+      <section class="back">
+        <a class="back-btn" href="main.html">
+          <svg class="back-btn__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="back-btn__path" d="M15 31.6667L17.35 29.3167L9.71666 21.6667H36.6667V18.3334H9.71666L17.3667 10.6834L15 8.33337L3.33333 20L15 31.6667Z" fill="black"/>
+          </svg>
+        </a>
+      </section>
+      <section class="person">
+        <h2 class="person__title title-h2">
+          Personal information
+        </h2>
+        <form class="person__form" action="#">
+          <div class="person__wrap">
+            <p class="person__key">
+              Username:
+            </p>
+            <p class="person__value">
+              dpitalenko
+            </p>
+          </div>
+          <div class="person__wrap">
+            <p class="person__key">
+              Old password:
+            </p>
+            <p class="person__value d-none">
+              *********
+            </p>
+            <input class="person__input input" type="text" placeholder="Type old password">
+            <svg class="person__edit" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="person__path" d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C20.8027 6.94749 20.8762 6.8376 20.9264 6.71662C20.9766 6.59565 21.0024 6.46597 21.0024 6.335C21.0024 6.20403 20.9766 6.07435 20.9264 5.95338C20.8762 5.8324 20.8027 5.72251 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="person__wrap">
+            <p class="person__key">
+              New password:
+            </p>
+            <p class="person__value d-none">
+              *********
+            </p>
+            <input class="person__input input" type="text" placeholder="Type new password">
+          </div>
+          <div class="person__wrap">
+            <p class="person__key">
+              Full name:
+            </p>
+            <p class="person__value d-none">
+              Diana Pitalenko
+            </p>
+            <input class="person__input input" type="text" placeholder="Diana Pitalenko" value="Diana Pitalenko">
+            <svg class="person__edit" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="person__path" d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C20.8027 6.94749 20.8762 6.8376 20.9264 6.71662C20.9766 6.59565 21.0024 6.46597 21.0024 6.335C21.0024 6.20403 20.9766 6.07435 20.9264 5.95338C20.8762 5.8324 20.8027 5.72251 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="person__wrap">
+            <p class="person__key">
+              Avatar:
+            </p>
+            <span class="person__icon person__icon_woman">
+              <img class="person__img" src="../assets/woman.png" alt="woman" title="woman">
+            </span>
+            <span class="person__icon person__icon_man">
+              <img class="person__img person__img_man" src="../assets/man.png" alt="wan" title="man">
+            </span>
+            <svg class="person__edit" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="person__path" d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C20.8027 6.94749 20.8762 6.8376 20.9264 6.71662C20.9766 6.59565 21.0024 6.46597 21.0024 6.335C21.0024 6.20403 20.9766 6.07435 20.9264 5.95338C20.8762 5.8324 20.8027 5.72251 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="person__buttons">
+            <button class="person__save btn">
+              save
+            </button>
+            <button class="person__reset btn">
+              Reset
+            </button>
+          </div>
+        </form>
+      </section>
     </div>
   </main>
   <footer class="footer">
