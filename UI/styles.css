@@ -16,13 +16,14 @@
   --label-progress: #9ed766;
   --label-complete: #059675;
   --card-bg: #eaf2f3;
+  --active-card-bg: rgba(167, 192, 206, 0.45);
 }
 
 body {
   margin: 0;
   font-family: var(--main-font);
   font-size: 16px;
-  background: url("../assets/background.jpg") no-repeat;
+  background: url("../assets/background.jpg") no-repeat 100% 100% ;
   background-size: cover;
 }
 
@@ -56,10 +57,15 @@ textarea {
   resize: none;
 }
 
+table {
+  
+}
+
 div,
 ul,
 p,
-input {
+input,
+table {
   box-sizing: border-box;
 }
 
@@ -149,7 +155,7 @@ input {
 .btn {
   width: 192px;
   height: 34px;
-  line-height: 33px;
+  line-height: 31px;
   font-family: var(--main-font);
   font-weight: 600;
   font-size: 16px;
@@ -170,6 +176,10 @@ input {
 .filter__btn {
   width: 118px;
   transition: all 0.2s ease;
+}
+
+.create-btn {
+  line-height: 33px;
 }
 
 .create-btn,
@@ -208,6 +218,12 @@ input {
   margin: 0;
   font-weight: 400;
   font-size: 40px;
+}
+
+.title-h3 {
+  margin: 0 0 25px;
+  font-weight: 700;
+  font-size: 26px;
 }
 
 .title-h4 {
