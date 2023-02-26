@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Board</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/UI/styles.css">
-  <link rel="stylesheet" href="/UI/main.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <header class="header">
@@ -43,7 +43,7 @@
   <main class="main">
     <div class="container">
       <section class="parameters">
-        <a class="create-btn btn" href="task.html">
+        <a class="create-btn btn" href="#">
           Сreate new task
         </a>
         <div class="additional">
@@ -63,9 +63,9 @@
             </div>
             <div class="filter__block">
               <div class="filter__wrap filter__wrap_title">
-                <h3 class="filter__title title-h3">
+                <h4 class="filter__title title-h4">
                   Choose filter
-                </h3>
+                </h4>
                 <div class="filter__close">
                   <div class="filter__line"></div>
                   <div class="filter__line filter__line_2"></div>
@@ -166,101 +166,63 @@
       </section>
       <section class="board">
         <div class="column todo">
-          <h2 class="column__title">
+          <h3 class="column__title">
             To Do
-          </h2>
+          </h3>
           <div class="column__wrap">
             <div class="card">
-              <div class="card__headline">
-                <div class="card__block">
-                  <h3 class="card__title title-h3">
-                    <span class="card__pricavy">
-                      <img src="../assets/lock.svg" alt="private" title="private">
-                    </span>
-                    <span>
-                      Task name
-                    </span>
-                  </h3>
-                  <p class="card__subtitle">
-                    for Assignee person name
-                  </p>
-                </div>
-                <div class="card__icon">
-                  <svg class="card__icon-item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="card__path" d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C20.8027 6.94749 20.8762 6.8376 20.9264 6.71662C20.9766 6.59565 21.0024 6.46597 21.0024 6.335C21.0024 6.20403 20.9766 6.07435 20.9264 5.95338C20.8762 5.8324 20.8027 5.72251 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="black"/>
-                  </svg>
-                  <svg class="card__icon-item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="card__path" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM8 9H16V19H8V9ZM15.5 4L14.5 3H9.5L8.5 4H5V6H19V4H15.5Z" fill="black"/>
+              <a href="task.html">
+                <div class="card__headline">
+                  <div class="card__block">
+                    <h4 class="card__title title-h4">
+                      <span class="card__pricavy">
+                        <img src="../assets/lock.svg" alt="private" title="private">
+                      </span>
+                      <span>
+                        Task name
+                      </span>
+                    </h4>
+                    <p class="card__subtitle">
+                      for Assignee person name
+                    </p>
+                  </div>
+                  <div class="card__icon">
+                    <svg class="card__icon-item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="card__path" d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C20.8027 6.94749 20.8762 6.8376 20.9264 6.71662C20.9766 6.59565 21.0024 6.46597 21.0024 6.335C21.0024 6.20403 20.9766 6.07435 20.9264 5.95338C20.8762 5.8324 20.8027 5.72251 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="black"/>
                     </svg>
+                    <svg class="card__icon-item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="card__path" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM8 9H16V19H8V9ZM15.5 4L14.5 3H9.5L8.5 4H5V6H19V4H15.5Z" fill="black"/>
+                      </svg>
+                  </div>
                 </div>
-              </div>
-              <div class="card__property">
-                <span class="card__label label label_status label_todo">
-                  to do
-                </span>
-                <span class="card__label label label_priority label_high">
-                  high
-                </span>
-                <span class="card__label">
-                  27.02.23  21:45
-                </span>
-              </div>
-              <p class="card__desc">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry ...
-              </p>
-              <p class="card__comment">
-                Comments (<span class="card__comment-count">2</span>)
-              </p>
+                <div class="card__property">
+                  <span class="card__label label label_status label_todo">
+                    to do
+                  </span>
+                  <span class="card__label label label_priority label_high">
+                    high
+                  </span>
+                  <span class="card__label">
+                    27.02.23  21:45
+                  </span>
+                </div>
+                <p class="card__desc">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry ...
+                </p>
+                <p class="card__comment">
+                  Comments (<span class="card__comment-count">2</span>)
+                </p>
+              </a>
             </div>
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
-                  <p class="card__subtitle">
-                    for Assignee person name
-                  </p>
-                </div>
-                <div class="card__icon">
-                  <svg class="card__icon-item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="card__path" d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C20.8027 6.94749 20.8762 6.8376 20.9264 6.71662C20.9766 6.59565 21.0024 6.46597 21.0024 6.335C21.0024 6.20403 20.9766 6.07435 20.9264 5.95338C20.8762 5.8324 20.8027 5.72251 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="black"/>
-                  </svg>
-                  <svg class="card__icon-item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="card__path" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM8 9H16V19H8V9ZM15.5 4L14.5 3H9.5L8.5 4H5V6H19V4H15.5Z" fill="black"/>
-                    </svg>
-                </div>
-              </div>
-              <div class="card__property">
-                <span class="card__label label label_status label_todo">
-                  to do
-                </span>
-                <span class="card__label label label_priority label_medium">
-                  medium
-                </span>
-                <span class="card__label">
-                  27.02.23  21:45
-                </span>
-              </div>
-              <p class="card__desc">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry ...
-              </p>
-              <p class="card__comment">
-                Comments (<span class="card__comment-count">2</span>)
-              </p>
-            </div>
-            <div class="card">
-              <div class="card__headline">
-                <div class="card__block">
-                  <h3 class="card__title title-h3">
-                    <span class="card__pricavy"></span>
-                    <span>
-                      Task name
-                    </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -295,12 +257,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -335,12 +297,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -375,12 +337,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -415,12 +377,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -455,12 +417,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -495,12 +457,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -535,12 +497,52 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
+                  <p class="card__subtitle">
+                    for Assignee person name
+                  </p>
+                </div>
+                <div class="card__icon">
+                  <svg class="card__icon-item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__path" d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C20.8027 6.94749 20.8762 6.8376 20.9264 6.71662C20.9766 6.59565 21.0024 6.46597 21.0024 6.335C21.0024 6.20403 20.9766 6.07435 20.9264 5.95338C20.8762 5.8324 20.8027 5.72251 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="black"/>
+                  </svg>
+                  <svg class="card__icon-item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__path" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM8 9H16V19H8V9ZM15.5 4L14.5 3H9.5L8.5 4H5V6H19V4H15.5Z" fill="black"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="card__property">
+                <span class="card__label label label_status label_todo">
+                  to do
+                </span>
+                <span class="card__label label label_priority label_medium">
+                  medium
+                </span>
+                <span class="card__label">
+                  27.02.23  21:45
+                </span>
+              </div>
+              <p class="card__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry ...
+              </p>
+              <p class="card__comment">
+                Comments (<span class="card__comment-count">2</span>)
+              </p>
+            </div>
+            <div class="card">
+              <div class="card__headline">
+                <div class="card__block">
+                  <h4 class="card__title title-h4">
+                    <span class="card__pricavy"></span>
+                    <span>
+                      Task name
+                    </span>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -578,21 +580,21 @@
           </button>
         </div>
         <div class="column progress">
-          <h2 class="column__title">
+          <h3 class="column__title">
             Progress
-          </h2>
+          </h3>
           <div class="column__wrap">
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy">
                       <img src="../assets/lock.svg" alt="private" title="private">
                     </span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -627,12 +629,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -667,12 +669,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -707,12 +709,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -747,12 +749,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -787,12 +789,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -827,12 +829,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -867,12 +869,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -907,12 +909,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -947,12 +949,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -990,21 +992,21 @@
           </button>
         </div>
         <div class="column complete">
-          <h2 class="column__title">
+          <h3 class="column__title">
             Complete
-          </h2>
+          </h3>
           <div class="column__wrap">
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy">
                       <img src="../assets/lock.svg" alt="private" title="private">
                     </span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1039,12 +1041,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1079,12 +1081,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1119,12 +1121,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1159,12 +1161,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1199,12 +1201,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1239,12 +1241,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1279,12 +1281,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1319,12 +1321,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>
@@ -1359,12 +1361,12 @@
             <div class="card">
               <div class="card__headline">
                 <div class="card__block">
-                  <h3 class="card__title title-h3">
+                  <h4 class="card__title title-h4">
                     <span class="card__pricavy"></span>
                     <span>
                       Task name
                     </span>
-                  </h3>
+                  </h4>
                   <p class="card__subtitle">
                     for Assignee person name
                   </p>

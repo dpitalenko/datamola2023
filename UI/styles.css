@@ -52,6 +52,10 @@ input:focus{
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 div,
 ul,
 p,
@@ -192,7 +196,21 @@ input {
   align-items: flex-start;
 }
 
-.title-h3 {
+.back {
+  padding: 10px 0;
+}
+
+.back-btn:hover .back-btn__path {
+  fill: var(--dark-blue);
+}
+
+.title-h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.title-h4 {
   margin: 0;
   font-weight: 400;
   font-size: 20px;
@@ -239,4 +257,40 @@ input {
 
 .label_complete {
   background: var(--label-complete);
+}
+
+/*----- Form elements -----*/
+.input,
+.comment__textarea {
+  padding: 4px 11px;
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: var(--black);
+  background: var(--light-gray-form);
+  border: 1px solid var(--light-gray-border);
+  border-radius: 2px;
+}
+
+.input::placeholder,
+.comment__textarea::placeholder {
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: var(--gray-form-text);
+}
+
+.input:hover::placeholder,
+.input:focus::placeholder,
+.comment__textarea:hover::placeholder,
+.comment__textarea:focus::placeholder {
+  color: var(--black);
+}
+
+.input:hover,
+.comment__textarea:hover{
+  border: 1px solid var(--gray-text);
+}
+
+.input:focus,
+.comment__textarea:focus {
+  border: 1px solid var(--gray-text);
 }

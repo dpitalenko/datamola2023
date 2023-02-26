@@ -114,33 +114,6 @@
   font-weight: 600;
 }
 
-.input {
-  padding: 4px 11px;
-  font-family: var(--main-font);
-  font-size: 14px;
-  color: var(--black);
-  background: var(--light-gray-form);
-  border: 1px solid var(--light-gray-border);
-  border-radius: 2px;
-}
-
-.input::placeholder {
-  color: var(--gray-form-text);
-}
-
-.input:hover::placeholder,
-.input:focus::placeholder {
-  color: var(--black);
-}
-
-.input:hover {
-  border: 1px solid var(--gray-text);
-}
-
-.input:focus {
-  border: 1px solid var(--gray-text);
-}
-
 .filter__search {
   width: 100%;
 }
