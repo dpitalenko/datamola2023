@@ -1,0 +1,268 @@
+/*----- Main -----*/
+.additional {
+  display: flex;
+}
+
+.format__item {
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.format__item_list {
+  margin-top: 5px;
+}
+
+.format__item_list:hover::after {
+  content: "list display";
+  position: absolute;
+  top: 29px;
+  left: -20px;
+  display: block;
+  width: 70px;
+  padding: 3px 7px;
+  font-size: 11px;
+  text-align: center;
+  color: var(--dark-blue);
+  background: var(--white);
+  border: 1px solid var(--dark-blue);
+  border-radius: 100px;
+}
+
+.format__item_col {
+  margin-top: 2px;
+}
+
+.format__item_col:hover::after {
+  content: "column display";
+  position: absolute;
+  top: 34px;
+  left: -35px;
+  display: block;
+  width: 80px;
+  padding: 3px 7px;
+  font-size: 11px;
+  text-align: center;
+  color: var(--dark-blue);
+  background: var(--white);
+  border: 1px solid var(--dark-blue);
+  border-radius: 100px;
+}
+
+/*----- Filter -----*/
+.filter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.filter__block {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 11px;
+  display: none;
+  background: var(--white);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.filter:hover .filter__block {
+  display: block;
+}
+
+.filter__wrap {
+  margin-bottom: 20px;
+}
+
+.filter__wrap_title {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.filter__title {
+  text-align: center;
+}
+
+.filter__close {
+  position: absolute;
+  top: 3px;
+  right: 6px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.filter__line {
+  margin-top: 10px;
+  width: 24px;
+  height: 1px;
+  background: var(--black);
+  transform: rotate(45deg);
+  border-radius: 100px;
+}
+
+.filter__line_2 {
+  position: absolute;
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.filter__text {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.input {
+  padding: 4px 11px;
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: var(--black);
+  background: var(--light-gray-form);
+  border: 1px solid var(--light-gray-border);
+  border-radius: 2px;
+}
+
+.input::placeholder {
+  color: var(--gray-form-text);
+}
+
+.input:hover::placeholder,
+.input:focus::placeholder {
+  color: var(--black);
+}
+
+.input:hover {
+  border: 1px solid var(--gray-text);
+}
+
+.input:focus {
+  border: 1px solid var(--gray-text);
+}
+
+.filter__search {
+  width: 100%;
+}
+
+.filter__list {
+  padding: 9px 9px;
+  height: 90px;
+  overflow: scroll;
+  border: 2px solid var(--light-gray-border);
+  border-radius: 2px;
+}
+
+.filter__list-item {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.filter__list-item:hover {
+  color: var(--dark-blue);
+}
+
+.filter__range {
+  display: flex;
+  align-items: center;
+}
+
+.filter__date {
+  width: 120px;
+}
+
+.filter__span {
+  margin: 0 7px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: var(--black);
+  border-radius: 100px;
+}
+
+.filter__choise-item {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.filter__label {
+  margin-left: 5px;
+}
+
+.filter__reset {
+  margin: 0 auto;
+}
+
+/*----- Board -----*/
+.board {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.column {
+  padding: 13px 6px 25px 16px;
+  width: 360px;
+  background: var(--card-bg);
+  border-radius: 10px;
+}
+
+.column__wrap {
+  height: 500px;
+  overflow: scroll;
+}
+
+.column__title {
+  margin: 0 0 25px;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.card__headline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card__subtitle {
+  font-size: 14px;
+}
+
+.card__icon-item {
+  cursor: pointer;
+}
+
+.card__icon-item:hover .card__path {
+  fill: var(--dark-blue)
+}
+
+.card__property {
+  margin: 18px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__label {
+  font-size: 14px;
+}
+
+.card__comment {
+  margin-top: 18px;
+}
+
+.card__btn {
+  display: block;
+  margin: 25px auto 0;
+}
